@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>A scaled corrected CSS parallax demo by Keith Clark</title>
+<style>
+body, html {
+  height 100%;
+}
+
+  /* Parallax base styles
+  --------------------------------------------- */
+	.parallax1 {
+	  /* The image used */
+	  position:relative;
+	  background-image: url('coffee2.jpg');
+
+	  /* Full height */
+	  min-height: 871px;
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  
+	  background-repeat: no-repeat;
+	  
+	}
+
+	.parallax2 {
+	  /* The image used */
+	  position:relative;
+	  background-image: url('coffee1.jpg');
+
+	  /* Full height */
+	  min-height: 487px;
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  
+	  background-repeat: no-repeat;
+	  
+	}
+  /* demo styles
+  --------------------------------------------- */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+  
+   /* centre the content in the parallax layers */
+  .whiteBox {
+	width:609px;
+	height:328px;
+	background:white;
+	position: absolute;
+    left: 50%;
+	top:50%;
+    transform: translate(-50%,-50%);   
+  }
+  
+  .photo {
+	position:relative;
+	top:49px;
+	left:42px;
+  }
+  
+  .item {
+	position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+
+  .text {
+	position: absolute;
+	top:49px;
+	left:250px;
+	font-family: Arial, sans-serif;
+	color:SlateBlue;
+  }
+  
+  .text2 {
+   position:absolute;
+   top: 50%;
+   transform: translate(0%,-50%);
+   left: 50px;
+   color:white;
+   font-family: Arial, sans-serif;
+  }
+  .column {
+  position:relative;
+  float:left;
+  width:417px;
+  height:732px;
+  }
+  /* misc
+  --------------------------------------------- */
+</style>
+</head>
+
+<body>
+        <div class="parallax1">
+			<div class="whiteBox">
+				<img class="photo" src="face.jpg" alt="CANNOT FIND">
+				<div class="text">
+					<p style="font-size:20px; font-style:italic;" > Migi Bell </p>
+					<p style="font-size:40px;" > FOOD </p>
+					<p style="font-size:40px; font-weight:bold;" > STYLIST.</p>
+					<p style="font-size:100px; font-weight:900; transform: translate(0%, -50%);"> _ </p>
+					<p style="font-size:24px; transform: translate(0px, -28px);" > PORTFOLIO ></p>					
+				</div>
+			</div>
+		</div>
+		<div>
+		<div class="column" style="background-color:CadetBlue;">
+			<div class="text2">
+					<p style="font-size:22px;" > PROJECTS </p>
+					<p style="font-size:30px; font-weight:bold;" > PROJECTS > </p>			
+			</div>
+		</div>
+		<div class="column" style="background-color:Indigo;">
+			<div class="text2">
+					<p style="font-size:22px;" > PROJECTS </p>
+					<p style="font-size:30px; font-weight:bold;" > EDITORIAL > </p>			
+			</div>
+		</div>
+		<div class="column" style="background-color:BlueViolet;">
+			<div class="text2">
+					<p style="font-size:22px;" > PROJECTS </p>
+					<p style="font-size:30px; font-weight:bold;" > INNOVATIVE > </p>			
+			</div>
+		</div>
+		</div>
+  </body>
+</html>
